@@ -5,7 +5,7 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { IsDate, IsString, MaxLength, MinLength } from 'class-validator';
+import { IsDateString, IsString, MaxLength, MinLength } from 'class-validator';
 import { StudentToCourse } from '../studentCourse/studentToCourse.entity';
 
 @Entity()
@@ -30,7 +30,7 @@ export class Student extends BaseEntity {
   @IsString()
   email: string;
 
-  @IsDate()
+  @IsDateString()
   @Column('date')
   birthdate: Date;
 

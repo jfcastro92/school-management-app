@@ -46,10 +46,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[product-screenshot-home]
-[product-screenshot-students]
-[product-screenshot-courses]
-[product-screenshot-results]
+[![School Results Management UI][product-screenshot-home]]
+[![School Results Management UI][product-screenshot-students]]
+[![School Results Management UI][product-screenshot-courses]]
+[![School Results Management UI][product-screenshot-results]]
 
 
 School Results management is an application to manage schools results. Also, it provides to end user the Students and Courses modules whose has the following features:
@@ -62,7 +62,7 @@ School Results management is an application to manage schools results. Also, it 
 
 School Management UI was built with the following frameworks/libraries.
 
-[![Angular][Angular.io]][Angular-url] [![Bootstrap][Bootstrap.com]][Bootstrap-url] [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![Angular][Angular.io]][Angular-url] [![Bootstrap][Bootstrap.com]][Bootstrap-url] [![Ng.Bootstrap][Ng-Bootstrap.com]][Ng-Bootstrap-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

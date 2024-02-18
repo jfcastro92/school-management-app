@@ -3,17 +3,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
+    <img src="../frontend/images/logo.svg" alt="Logo" width="80" height="80">
   <h3 align="center">School Results Management UI</h3>
 
   <p align="center">
     An NextJS + MySQL application Backend to manage Students, Courses and School Results
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
   </p>
 </div>
 
@@ -55,7 +49,7 @@ School Results management is an application to manage schools results. Also, it 
 
 School Management UI was built with the following frameworks/libraries.
 
-[![Next][Next.js]][Next.url] ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+[![Next][Next.js]] ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

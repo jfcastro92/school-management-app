@@ -3,17 +3,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
+    <img src="images/logo.svg" alt="Logo" width="80" height="80">
   <h3 align="center">School Results Management UI</h3>
 
   <p align="center">
     An angular application UI to manage Students, Courses and School Results
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
   </p>
 </div>
 

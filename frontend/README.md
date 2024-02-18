@@ -46,10 +46,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![School Results Management UI][product-screenshot-home]]
-[![School Results Management UI][product-screenshot-students]]
-[![School Results Management UI][product-screenshot-courses]]
-[![School Results Management UI][product-screenshot-results]]
+[product-screenshot-home]
+[product-screenshot-students]
+[product-screenshot-courses]
+[product-screenshot-results]
 
 
 School Results management is an application to manage schools results. Also, it provides to end user the Students and Courses modules whose has the following features:

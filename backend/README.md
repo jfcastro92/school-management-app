@@ -1,38 +1,101 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+<a name="readme-top"></a>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  <h3 align="center">School Results Management UI</h3>
 
-## Description
+  <p align="center">
+    An NextJS + MySQL application Backend to manage Students, Courses and School Results
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+  </p>
+</div>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-```bash
-$ npm install
-```
 
-## Running the app
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+School Results management is an application to manage schools results. Also, it provides to end user the Students and Courses modules whose has the following features:
+
+* Students Module: Manage students by creating, editing and deleting.
+* Courses Module: Manage courses by creating, editing and deleting.
+* Results Module: Manage student's results by asociating creating, editing, and deleting student's results into the      different courses
+
+### Built With
+
+School Management UI was built with the following frameworks/libraries.
+
+[![Next][Next.js]][Next.url] ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+_For running the app, follow the steps below_
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jfcastro92/school-management-app.git
+   ```
+2. Go to the frontend folder
+   ```sh
+   cd /frontend
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
 
 ```bash
 # development
@@ -45,29 +108,33 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+* Navigate to `http://localhost:3001/`. The application will automatically reload if you change any of the source files.
 
-```bash
-# unit tests
-$ npm run test
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-# e2e tests
-$ npm run test:e2e
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# test coverage
-$ npm run test:cov
-```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
+<!-- LICENSE -->
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTACT -->
+## Contact
+
+Juan Castro - [@your_twitter](https://twitter.com/your_username) - jfcastro9208@gmail.com
+
+Project Link: [https://github.com/jfcastro92/school-management-app](https://github.com/jfcastro92/school-management-app)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+

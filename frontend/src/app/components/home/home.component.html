@@ -1,0 +1,57 @@
+<!-- Page content wrapper-->
+<div id="page-content-wrapper">
+    <!-- Top navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+            <h1>School Results Management</h1>
+        </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container-fluid" style="margin-top: 5%;">
+        <div class="container">
+            <div class="row" style="margin-top: 5%;">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Students</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Students administration module</h6>
+                    <p class="card-text">In this section you can manage Students information. You can create, edit or delete Students.</p>
+                    <a [routerLink]="['/student']" class="card-link">Go to section</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Courses</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Courses administration module</h6>
+                    <p class="card-text">In this section you can manage Courses information. You can create, edit or delete Courses.</p>
+                    <a [routerLink]="['/course']" class="card-link">Go to section</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Results</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Grades administration module</h6>
+                    <p class="card-text">In this section you can manage Grades information. You can create, edit or delete Grades.</p>
+                    <a [routerLink]="['/result']" class="card-link">Go to section</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">About</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Developer Information</h6>
+                    <p class="card-text">In this section you can see Developer's information like experience and other information.</p>
+                    <a [routerLink]="['/about']" class="card-link">Go to section</a>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

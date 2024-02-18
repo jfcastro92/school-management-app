@@ -1,0 +1,79 @@
+<div id="page-content-wrapper">
+  <!-- Top navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+          <h1>Student Management</h1>
+      </div>
+  </nav>
+  <!-- Page content-->
+  <div class="container-fluid" style="margin-top: 4%;">
+    <button type="button" class="btn btn-success bi bi-file-earmark-person btn-space" data-mdb-ripple-init (click)="openCreateStudentFormModal()">
+      Create
+    </button>
+      <div class="container">
+        <table class="table align-middle mb-0 bg-white table-striped">
+          <thead class="bg-light">
+            <tr>
+              <th>Full Name</th>
+              <th>DOB</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let student of students">
+              <td>
+                <div class="d-flex align-items-center">
+                  <img
+                      src="https://www.svgrepo.com/show/520490/student.svg"
+                      alt=""
+                      style="width: 45px; height: 45px"
+                      class="rounded-circle"
+                      />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">{{student.firstName}} {{student.secondName}} {{student.lastName}}</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">{{student.birthdate}}</p>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">{{student.email}}</p>
+              </td>
+              <td class>
+                <div class="btn-toolbar">
+                  <div btn-group mr-2 role="group">
+                    <button type="button" class="btn btn-primary btn-rounded bi bi-pen-fill btn-space" data-mdb-ripple-init (click)="openEditStudentFormModal(student)">
+                      Edit
+                    </button>
+                  </div>
+                  <div btn-group mr-2 role="group">
+                    <button type="button" class="btn btn-danger btn-rounded bi bi-trash-fill btn-space" data-mdb-ripple-init (click)="openDeleteConfirmationModal(student.id)">
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>
+
+@if (show) {
+	<ngb-toast [autohide]="false" (hidden)="show = false; title =''; message=''">
+		<ng-template ngbToastHeader>
+			<div class="me-auto">
+        <img
+          src="https://wiki.octave.org/wiki/images/a/ae/Info_icon.svg"
+          width="16" height="16" viewBox="0 0 24 24"
+          class="rounded-circle"
+        />
+				<strong class="mx-1">{{title}} </strong>
+			</div>
+		</ng-template>
+		{{message}}
+	</ngb-toast>
+}

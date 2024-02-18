@@ -1,0 +1,69 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{GetFormTitle}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="onDismiss.next()"></button>
+</div>
+<div class="modal-body">
+<form>
+  <div class="form-group">
+    <label>Course Name</label>
+    <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button type="button" class="btn btn-success btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+            {{courseLabel}}
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button
+              *ngFor="let course of courses" ngbDropdownItem 
+              [value]="course.id" (click)="onOptionSelected(course.id, 'course', course.courseName)">
+              {{course.courseName}}
+          </button>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="form-group">
+    <label>Student Name</label>
+    <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button type="button" class="btn btn-success btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle #student>
+            {{studentLabel}}
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+            <button
+              *ngFor="let student of students" ngbDropdownItem
+              [value]="student.id" (click)="onOptionSelected(student.id, 'student', student.firstName)">
+              {{student.firstName}} {{student.secondName}} {{student.lastName}}
+            </button> 
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="form-group">
+    <label>Grade</label>
+    <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button type="button" class="btn btn-success btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle #student>
+            {{gradeLabel}}
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+            <button 
+              *ngFor="let grade of grades" ngbDropdownItem
+              [value]="grade" (click)="onGradeSelected(grade)">
+              {{grade}}
+            </button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" (click)="onDismiss.next()">Cancel</button>
+<button type="button" class="btn btn-success" (click)="onSubmit.next(resultForm)"> {{SubmitLabelButton}} </button>
+</div>

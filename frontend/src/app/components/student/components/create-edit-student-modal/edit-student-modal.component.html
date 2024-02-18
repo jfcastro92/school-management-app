@@ -1,0 +1,49 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{GetFormTitle}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="onDismiss.next()"></button>
+</div>
+<div class="modal-body">
+<form [formGroup]="studentForm" >
+  <div class="form-group">
+    <label>First Name</label>
+    <input formControlName="firstName" type="text" class="form-control" placeholder="Enter first name">
+  </div>
+  <div class="form-group">
+    <label>Second Name</label>
+    <input formControlName="secondName" type="text" class="form-control" placeholder="Enter second name (optional)">
+  </div>
+  <div class="form-group">
+    <label>Family Name</label>
+    <input formControlName="lastName" type="text" class="form-control" placeholder="Enter family name">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input formControlName="email" type="email" class="form-control" placeholder="email">
+    <div *ngIf="studentForm.get('email')?.invalid && (studentForm.get('email')?.dirty || studentForm.get('email')?.touched)">
+      <div *ngIf="studentForm.get('email')?.errors?.['required']">Email Required.</div>
+      <div *ngIf="studentForm.get('email')?.errors?.['pattern']">Email is not valid.</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Date of Birth</label>
+    <input
+          id="dateOfBirth"
+          class="form-control"
+          placeholder="yyyy-mm-dd"
+          formControlName="birthdate"
+          name="dp"
+          ngbDatepicker
+          #dp="ngbDatepicker"
+        />
+        <div *ngIf="studentForm.get('birthdate')?.invalid && (studentForm.get('birthdate')?.dirty || studentForm.get('birthdate')?.touched)">
+          <div *ngIf="studentForm.get('birthdate')?.errors?.['required']">Birthdate required.</div>
+          <div *ngIf="studentForm.get('birthdate')?.errors?.['invalidBirthdate']">Student birthdate must be greater than 10 years.</div>
+        </div>
+        <button class="btn btn-outline-secondary bi bi-calendar3" (click)="dp.toggle()" type="button"></button>
+  </div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" (click)="onDismiss.next()">Cancel</button>
+<button type="button" class="btn btn-success" (click)="onSubmit.next(mode)" [disabled]="studentForm.invalid"> {{SubmitLabelButton}} </button>
+</div>

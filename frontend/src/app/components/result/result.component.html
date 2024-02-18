@@ -1,0 +1,77 @@
+<div id="page-content-wrapper">
+  <!-- Top navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+          <h1>Results Management</h1>
+      </div>
+  </nav>
+  <!-- Page content-->
+  <div class="container-fluid" style="margin-top: 4%;">
+    <button type="button" class="btn btn-success bi bi-file-earmark-person btn-space" data-mdb-ripple-init (click)="openCreateResultFormModal()">
+      Create Result
+    </button>
+      <div class="container">
+        <table class="table align-middle mb-0 bg-white table-striped">
+          <thead class="bg-light">
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Course Name</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let result of results">
+              <td>
+                <div class="d-flex align-items-center">
+                  <img
+                      src="https://cdn-icons-png.flaticon.com/512/9913/9913579.png"
+                      alt=""
+                      style="width: 45px; height: 45px"
+                      class="rounded-circle"
+                      />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">{{result.firstName}} {{result.secondName}} {{result.lastName}}</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">{{result.email}}</p>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">{{result.courseName}}</p>
+              </td>
+              <td>
+                <p class="fw-normal mb-1">{{result.grade}}</p>
+              </td>
+              <td class>
+                <div class="btn-toolbar">
+                  <div btn-group mr-2 role="group">
+                    <button type="button" class="btn btn-danger btn-rounded bi bi-trash-fill btn-space" data-mdb-ripple-init (click)="openDeleteConfirmationModal(result.studentToCourseId)">
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>
+
+@if (show) {
+	<ngb-toast [autohide]="false" (hidden)="show = false; title =''; message=''">
+		<ng-template ngbToastHeader>
+			<div class="me-auto">
+        <img
+          src="https://wiki.octave.org/wiki/images/a/ae/Info_icon.svg"
+          width="16" height="16" viewBox="0 0 24 24"
+          class="rounded-circle"
+        />
+				<strong class="mx-1">{{title}} </strong>
+			</div>
+		</ng-template>
+		{{message}}
+	</ngb-toast>
+}

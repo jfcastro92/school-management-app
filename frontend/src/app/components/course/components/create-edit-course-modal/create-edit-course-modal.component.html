@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{GetFormTitle}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="onDismiss.next()"></button>
+</div>
+<div class="modal-body">
+<form [formGroup]="courseForm" >
+  <div class="form-group">
+    <label>Course Name</label>
+    <input formControlName="name" type="text" class="form-control" placeholder="Enter course name">
+  </div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" (click)="onDismiss.next()">Cancel</button>
+<button type="button" class="btn btn-success" (click)="onSubmit.next(mode)" [disabled]="courseForm.invalid"> {{SubmitLabelButton}} </button>
+</div>

@@ -62,7 +62,7 @@ School Results management is an application to manage schools results. Also, it 
 
 School Management UI was built with the following frameworks/libraries.
 
-[![Angular][Angular.io]][Angular-url] [![Bootstrap][Bootstrap.com]][Bootstrap-url] [![Ng.Bootstrap][Ng-Bootstrap.com]][Ng-Bootstrap-url]
+[![Angular][Angular.io]][Angular-url] [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

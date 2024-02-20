@@ -88,7 +88,7 @@ _For running the app, follow the steps below_
    ```
 2. Go to the frontend folder
    ```sh
-   cd /frontend
+   cd /backend
    ```
 3. Install NPM packages
    ```sh

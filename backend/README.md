@@ -63,9 +63,19 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Intall npm into your system
   ```sh
   npm install npm@latest -g
+  ```
+
+* Intall mysql database engine into your system, download the installer and run it
+  ```sh
+  go to url: https://dev.mysql.com/downloads/mysql/
+  ```
+  
+* Create a schema into the mysql database engine. For the example we used: 'localhost'
+  ```sh
+  go to url: https://dev.mysql.com/downloads/mysql/
   ```
 
 ### Installation
@@ -83,6 +93,19 @@ _For running the app, follow the steps below_
 3. Install NPM packages
    ```sh
    npm install
+   ```
+3. Go to the Database configuration file into the school-management-app/backend/src/config/dbConnection.ts and edit connection credentials
+   ```sh
+   export const dbConfig = {
+      type: 'mysql',
+      host: 'localhost',
+      port: 3306,
+      username: 'root',
+      password: 'root',
+      database: 'localhost',
+      entities: ['dist/**/*.entity{.ts,.js}'],
+      synchronize: true,
+    };
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

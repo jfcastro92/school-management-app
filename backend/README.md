@@ -75,7 +75,7 @@ This is an example of how to list things you need to use the software and how to
   
 * Create a schema into the mysql database engine. For the example we used: 'localhost'
   ```sh
-  go to url: https://dev.mysql.com/downloads/mysql/
+  go to docs: [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-creating-a-model.html)
   ```
 
 ### Installation

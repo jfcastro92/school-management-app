@@ -49,7 +49,7 @@ School Results management is an application to manage schools results. Also, it 
 
 School Management UI was built with the following frameworks/libraries.
 
-[![Next][Next.js]] ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+[NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,6 +152,4 @@ Project Link: [https://github.com/jfcastro92/school-management-app](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
 
